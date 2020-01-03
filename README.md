@@ -1,1 +1,1 @@
-# javascript-composition
+# javascript-composition-example
