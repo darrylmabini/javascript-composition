@@ -5,21 +5,21 @@ const eater = (state) => ({
         console.log(`Eating ${food} amount of food`);
         state.energy += food;
     }
-})
+});
 
 const walker = (state) => ({
     walk(meters) {
         console.log(`Walking ${meters} meters`);
         state.energy -= meters;
     }
-})
+});
 
 const runner = (state) => ({
     run(meters) {
         console.log(`Running ${meters} meters`);
         state.energy -= (meters * 2);
     }
-})
+});
 
 const Dog = (name, energy = 100) => {
     let dog = {
@@ -34,7 +34,7 @@ const Dog = (name, energy = 100) => {
         walker(dog),
         runner(dog),
     );
-}
+};
 
 const Cat = (name, energy = 100) => {
     let cat = {
@@ -49,7 +49,7 @@ const Cat = (name, energy = 100) => {
         walker(cat),
         runner(cat),
     );
-}
+};
 
 const Human = (name, energy = 100) => {
     let human = {
@@ -64,7 +64,7 @@ const Human = (name, energy = 100) => {
         walker(human),
         runner(human),
     );
-}
+};
 
 // Dog activities
 const dog1 = Dog('Barky');
@@ -88,5 +88,5 @@ guy1.walk(15);
 guy1.speak();
 guy1.run(5);
 guy1.eat(10);
-console.log(cat1);
+console.log(guy1);
 ```
