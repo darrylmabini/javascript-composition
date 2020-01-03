@@ -25,7 +25,7 @@ const Dog = (name, energy = 100) => {
     let dog = {
         name,
         energy,
-        bark: () => console.log('Bark bark!!!')
+        bark: () => console.log('Bark bark!!!'),
     };
 
     return Object.assign(
@@ -40,7 +40,7 @@ const Cat = (name, energy = 100) => {
     let cat = {
         name,
         energy,
-        meow: () => console.log('Meow meow!!!')
+        meow: () => console.log('Meow meow!!!'),
     };
 
     return Object.assign(
@@ -55,7 +55,7 @@ const Human = (name, energy = 100) => {
     let human = {
         name,
         energy,
-        speak: () => console.log('Hello world!!!')
+        speak: () => console.log('Hello world!!!'),
     };
 
     return Object.assign(
